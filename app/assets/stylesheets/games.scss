@@ -3,18 +3,24 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 $font-stack: Helvetica, sans-serif;
 $gray: #F4F4F4;
+$yellow: #e3b23c;
 body {
   font: 100% $font-stack;
 }
 
 .game-container {
   display: flex;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 16px;
 }
 
 .letter {
-  padding: 10px;
-  background-color: $gray;
+  padding: 32px;
+  background-color: $yellow;
+  color: $gray;
   width: 20px;
   text-align: center;
   margin: 8px 16px;
+  border-radius: 16px;
 }
