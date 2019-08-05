@@ -7,7 +7,19 @@ $yellow: #e3b23c;
 body {
   font: 100% $font-stack;
 }
-
+a {
+  text-decoration: none;
+  color: inherit;
+  transition-property: border-bottom;
+  transition-duration: 0.3s;
+  transition-property: padding;
+  transition-duration: 0.5s ease;
+}
+a:hover {
+  text-decoration: none;
+  padding: 0 0 2px 10px;
+  border-bottom: 4px solid yellow;
+}
 .game-container {
   display: flex;
   font-size: 26px;
@@ -24,3 +36,4 @@ body {
   margin: 8px 16px;
   border-radius: 16px;
 }
+

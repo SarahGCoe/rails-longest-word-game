@@ -4,11 +4,19 @@
   <div class="letter"> <%= letter %> </div>
   <% end %>
 </div>
-
+<div class="cont">
 <form action="/score" method="POST">
   <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
   <%= hidden_field_tag :letters, @letters %>
   <label for="guess">What is the longest word you can find?</label>
   <input type="text" name="guess">
   <input type="submit" value="Play">
+<!--
+<label for="inp" class="inp">
+  <input type="text" id="inp" placeholder="&nbsp;">
+  <span class="label">Longest word</span>
+  <span class="border"></span>
+</label> -->
 </form>
+</div>
+<%= link_to 'New game', new_path %>
